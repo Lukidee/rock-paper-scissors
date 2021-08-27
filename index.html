@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Abstracte kunst app</title>
+	<script src="js/lib/jquery-3.2.1.min.js"></script>
+	<script src="js/lib/canvasgridtools-0.2.js"></script>
+	<script src="js/rockpaperscissors-img-0.4.js"></script>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<div id="fpscounter"></div>
+	<div id="menubutton">
+		<button id="hiddenbutton">Menu</button>
+		<span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span>
+	</div>
+	<div id="controlpanel">
+		<h2>control panel</h2>
+		<!-- rock paper scissors variables -->
+		<label for="adjustmentrate" class="newsection">adjustment rate</label>
+		<input type="range" min="0" max="1" step="0.01" value="0.04" class="slider" id="adjustmentrate">
+		<label for="adjustmentbias">adjustment bias</label>
+		<input type="range" min="-1" max="1" step="0.1" value="0.2" class="slider" id="adjustmentbias">
+		<label for="aggressiveness">aggressiveness</label>
+		<input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="aggressiveness">
+		<label for="mutationchance">mutation chance</label>
+		<input type="range" min="0" max="0.001" step="0.00001" value="0" class="slider" id="mutationchance">
+
+		<!-- CSS filter variables -->
+		<label for="cssfilters" class="newsection">post-processing</label>
+		<input type="checkbox" checked="true" class="checkbox" id="cssfilters">
+		<label for="blur">blur</label>
+		<input type="range" min="0" max="10" step="1" value="3" class="slider" id="blur">
+		<label for="saturation">saturation</label>
+		<input type="range" min="0" max="1000" step="10" value="130" class="slider" id="saturation">
+		<label for="brightness">brightness</label>
+		<input type="range" min="0" max="300" step="1" value="110" class="slider" id="brightness">
+		<label for="contrast">contrast</label>
+		<input type="range" min="0" max="600" step="1" value="130" class="slider" id="contrast">
+		<label for="huerotate">rotate hue</label>
+		<input type="range" min="0" max="10" step="0.1" value="0" class="slider" id="huerotate">
+
+	</div>
+</body>
+</html>
